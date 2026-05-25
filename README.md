@@ -44,5 +44,6 @@
 
 ## Testes
 
-- Testar navegação e links
+- Testar navegação
+- Teste CTAs e links
 - Testar responsividade
