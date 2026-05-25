@@ -70,15 +70,17 @@
 Antes de desenhar telas, você precisa definir o "o que" e o "para quem". Você já tem ótimas opções de temas mapeadas nos seus arquivos de ideias.
 
 [✓] **Escolha um tema definitivo que facilite a criação de no mínimo 5 páginas com sentido lógico.**
-_Tema escolhido: Website de Receitas_
-_Motivo: nesse tema é possível criar 5 páginas simples com todos o requisitos exigidos, como a tabela de informações nutricionais e o formulário de envio de receitas._
+
+- _Tema escolhido: Website de Receitas_
+- _Motivo: nesse tema é possível criar 5 páginas simples com todos o requisitos exigidos, como a tabela de informações nutricionais e o formulário de envio de receitas._
 
 [✓] **Defina qual será a principal funcionalidade de cada página para não perder o foco do projeto individual.**
-_Página Inicial (Home): com destaque da semana, visão geral de categorias, barra de busca central e categorias populares._
-_Página Receitas (Listagem): lista completa do catálogo de receitas._
-_Página Receita (Interna): apresenta a receita com foto do prato, video de preparo, áudio descrição da receita, lista de ingredientes, passo a passo e a tabela nutricional._
-_Página Sobre: conteúdo em texto e foto do autor_
-_Página Contato / Envie sua Receita: possui o formulário para os usuários enviarem receitas ou contato/dúvidas._
+
+- _Página Inicial (Home): com destaque da semana, visão geral de categorias, barra de busca central e categorias populares._
+- _Página Receitas (Listagem): lista completa do catálogo de receitas._
+- _Página Receita (Interna): apresenta a receita com foto do prato, video de preparo, áudio descrição da receita, lista de ingredientes, passo a passo e a tabela nutricional._
+- _Página Sobre: conteúdo em texto e foto do autor_
+- _Página Contato / Envie sua Receita: possui o formulário para os usuários enviarem receitas ou contato/dúvidas._
 
 [✓] **Planeje em qual página fará sentido encaixar o formulário exigido.**
 
