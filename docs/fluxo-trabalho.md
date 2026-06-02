@@ -67,7 +67,7 @@ Agora começa a transição para a parte técnica, mas ainda sem estilizar e apl
 
 5. **Estratégia de Desenvolvimento**
 
-Com a estrutura semântica pronta, aplica-se a "tinta" no projeto.
+[] Com a estrutura semântica pronta, aplica-se a "tinta" no projeto.
 
 [] Defina as variáveis CSS (cores, tipografia) se optar por usá-las, o que facilita muito a manutenção.
 
