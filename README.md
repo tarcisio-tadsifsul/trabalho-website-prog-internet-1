@@ -125,6 +125,16 @@ O layout foi planejado utilizando:
 
 ---
 
+## Identidade Visual
+
+- **Tipografia:** `Fraunces` (Títulos) e `Inter` (Textos) via Google Fonts.
+- **Paleta de Cores:**
+  - 🔴 Principal:
+  - ⚪ Fundo:
+  - 🔵 Contraste:
+
+---
+
 ## Estrutura do Projeto
 
 ```bash

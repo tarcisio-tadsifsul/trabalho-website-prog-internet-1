@@ -1,0 +1,13 @@
+/* assets/css/style.css */
+
+/* DOCUMENTAÇÃO TÉCNICA DO DESIGN SYSTEM */
+:root {
+  /* Cores */
+  --cor-principal: #e63946;
+  --cor-fundo: #f8f9fa;
+  --cor-texto: #1d3557;
+
+  /* Tipografia */
+  --fonte-titulos: "Poppins", sans-serif;
+  --fonte-textos: "Inter", sans-serif;
+}

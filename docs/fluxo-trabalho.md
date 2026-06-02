@@ -35,7 +35,7 @@ Antes de desenhar telas, você precisa definir o "o que" e o "para quem". Você 
 
 Esta é a fase de listar o conteúdo antes de pensar na estética.
 
-[] Crie um mapa do site listando as 5 páginas exatas que você estruturou (Home, Listagem, Interna, Sobre, Contato).
+[✓] Crie um mapa do site listando as 5 páginas (Home, Listagem, Interna, Sobre, Contato).
 [] Liste quais informações em texto e quais imagens estarão em cada uma dessas páginas.
 [] Defina a hierarquia de navegação e como o usuário vai transitar entre os links.
 
@@ -67,7 +67,9 @@ Agora começa a transição para a parte técnica, mas ainda sem estilizar e apl
 
 5. **Estratégia de Desenvolvimento**
 
-[] Com a estrutura semântica pronta, aplica-se a "tinta" no projeto.
+[] {{ REALIZANDO }} Desenvolver a estrutura semântica de cada página com HTML5, garantindo que o conteúdo esteja organizado e acessível.
+
+[] Com a estrutura semântica pronta, desenvolver o estilo com css.
 
 [] Defina as variáveis CSS (cores, tipografia) se optar por usá-las, o que facilita muito a manutenção.
 
@@ -85,6 +87,7 @@ reset.css
 A etapa final de revisão de qualidade e preparação para a nota.
 
 [] Revise o código para garantir que você entende toda a lógica, pois o uso de IA sem capacidade de explicação resultará em nota zero na apresentação.
+[] Revisar arquivos de design e readme para adicionar informações de design, fontes, cores e outras decisões visuais.
 [] Redija o relatório em formato ".pdf" descrevendo cada página da aplicação, o que faz, como faz e sua relação com as demais.
 [] Estruture o documento com capa, sumário e elementos textuais.
 [] Compacte a pasta do projeto ou prepare o link sem restrições de acesso e senhas no Github/Drive.
