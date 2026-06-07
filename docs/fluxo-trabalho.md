@@ -59,15 +59,17 @@ Agora começa a transição para a parte técnica, mas ainda sem estilizar e apl
 
 [✓] Crie a estrutura de pastas do projeto para manter os arquivos organizados.
 [✓] Crie os 5 arquivos HTML em branco, já linkando os arquivos CSS de estilo.
-[] Escreva toda a estrutura HTML respeitando a semântica antes de aplicar qualquer classe visual.
-[] Use tags semânticas como `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>` para organizar o conteúdo de cada página.
-[] Adicione os elementos obrigatórios (menu de navegação, formulário, tabela) na estrutura HTML, mesmo que ainda estejam sem estilo.
+[✓] Escreva toda a estrutura HTML respeitando a semântica antes de aplicar qualquer classe visual.
+
+[✓] Use tags semânticas como `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>` para organizar o conteúdo de cada página.
+
+[✓] Adicione os elementos obrigatórios (menu de navegação, formulário, tabela) na estrutura HTML, mesmo que ainda estejam sem estilo.
 
 ---
 
 5. **Estratégia de Desenvolvimento**
 
-[] {{ REALIZANDO }} Desenvolver a estrutura semântica de cada página com HTML5, garantindo que o conteúdo esteja organizado e acessível.
+[✓] Desenvolver a estrutura semântica de cada página com HTML5, garantindo que o conteúdo esteja organizado e acessível.
 
 [] Com a estrutura semântica pronta, desenvolver o estilo com css.
 

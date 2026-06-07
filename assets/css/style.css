@@ -1,13 +1,62 @@
 /* assets/css/style.css */
 
-/* DOCUMENTAÇÃO TÉCNICA DO DESIGN SYSTEM */
+/* 2. DOCUMENTAÇÃO / DESIGN SYSTEM */
 :root {
   /* Cores */
-  --cor-principal: #e63946;
-  --cor-fundo: #f8f9fa;
-  --cor-texto: #1d3557;
+  --fundo: #fafbf2;
+  --texto: #102515;
+  --primaria: #1c8742;
+  --texto-primaria: #fcfdf5;
+  --suave: #ecf1e2;
+  --texto-suave: #57685a;
+  --destaque: #f3ba26;
+  --texto-destaque: #04270f;
+  --borda: #dae1d3;
+  --input: #1c8742;
 
   /* Tipografia */
-  --fonte-titulos: "Poppins", sans-serif;
-  --fonte-textos: "Inter", sans-serif;
+  --fonte-titulos: "Fraunces", serif;
+  --font-texto: "Inter", sans-serif;
+}
+
+/* 3. ESTILOS GLOBAIS */
+body {
+  font-family: var(--font-texto);
+  background-color: var(--fundo);
+  color: var(--texto);
+}
+
+/* HEADER */
+.header {
+  padding: 20px;
+}
+
+.header .container-pai {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header .logo a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--destaque);
+  padding: 5px;
+}
+
+.header .logo span {
+  font-family: var(--fonte-titulos);
+  font-size: 2rem;
+}
+
+.header .logo svg {
+  background-color: #9b424d;
+  padding: 5px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  fill: #fff;
+  stroke: #fff;
 }

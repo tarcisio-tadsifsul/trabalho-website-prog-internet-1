@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Meta Tags -->
     <title>Receitaria - Comida simples para o dia a dia</title>
-    <!-- Favicon -->
-    <!-- Links CSS -->
-    <!-- OpenGraph -->
+    <meta
+      name="description"
+      content="Receitas simples e fáceis para aprender."
+    />
+    <link rel="icon" href="./assets/img/favicon.webp" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container-wrap">
+      <div class="container-pai">
         <div class="logo">
           <a href="/">
             <svg
@@ -39,16 +46,16 @@
         <nav class="menu">
           <ul class="lista">
             <li class="menu-item pagina-atual">
-              <a href="/" class="link">Início</a>
+              <a href="./" class="link">Início</a>
             </li>
             <li class="menu-item">
-              <a href="/pages/receitas.html" class="link">Receitas</a>
+              <a href="./pages/receitas.html" class="link">Receitas</a>
             </li>
             <li class="menu-item">
-              <a href="/pages/sobre.html" class="link">Sobre</a>
+              <a href="./pages/sobre.html" class="link">Sobre</a>
             </li>
             <li class="menu-item">
-              <a href="/pages/contato.html" class="link">Contato</a>
+              <a href="./pages/contato.html" class="link">Contato</a>
             </li>
             <li class="menu-item">
               <a href="#hero" class="link">
@@ -111,7 +118,7 @@
                 <input type="submit" value="Pesquisar" />
               </div>
             </form>
-            <a class="cta-receita" href="/receita.html">
+            <a class="cta-receita" href="./pages/receita.html">
               Ver todas as Receitas
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -211,7 +218,7 @@
                   <p>Fácil</p>
                 </div>
               </div>
-              <a class="cta-receita" href="/receita.html">
+              <a class="cta-receita" href="./pages/receita.html">
                 Ver Receita Completa
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -241,7 +248,7 @@
         <section id="destaques" class="destaques">
           <h2>Destaques da Semana</h2>
           <p>Três receitas selecionadas para começar bem.</p>
-          <a class="cta-ver-todas" href="/receitas.html">
+          <a class="cta-ver-todas" href="./pages/receitas.html">
             Ver todas
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -493,74 +500,79 @@
           <h2>Receitas por Categoria</h2>
           <p>Explore por tipo de receita.</p>
           <div class="grid-categorias">
-            <div class="categoria-item">
-              <div class="icone-categoria">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-utensils-crossed size-6"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8"
-                  ></path>
-                  <path
-                    d="M15 15 3.3 3.3a4.2 4.2 0 0 0 0 6l7.3 7.3c.7.7 2 .7 2.8 0L15 15Zm0 0 7 7"
-                  ></path>
-                  <path d="m2.1 21.8 6.4-6.3"></path>
-                  <path d="m19 5-7 7"></path>
-                </svg>
+            <a href="./pages/receita.html">
+              <div class="categoria-item">
+                <div class="icone-categoria">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-utensils-crossed size-6"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8"
+                    ></path>
+                    <path
+                      d="M15 15 3.3 3.3a4.2 4.2 0 0 0 0 6l7.3 7.3c.7.7 2 .7 2.8 0L15 15Zm0 0 7 7"
+                    ></path>
+                    <path d="m2.1 21.8 6.4-6.3"></path>
+                    <path d="m19 5-7 7"></path>
+                  </svg>
+                </div>
+                <h3>Título da Categoria</h3>
+                <p>descrição curta da categoria</p>
               </div>
-              <h3>Título da Categoria</h3>
-              <p>descrição curta da categoria</p>
-            </div>
+            </a>
 
-            <div class="categoria-item">
-              <div class="icone-categoria">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-soup size-6"
-                  aria-hidden="true"
-                >
-                  <path d="M12 21a9 9 0 0 0 9-9H3a9 9 0 0 0 9 9Z"></path>
-                  <path d="M7 21h10"></path>
-                  <path d="M19.5 12 22 6"></path>
-                  <path
-                    d="M16.25 3c.27.1.8.53.75 1.36-.06.83-.93 1.2-1 2.02-.05.78.34 1.24.73 1.62"
-                  ></path>
-                  <path
-                    d="M11.25 3c.27.1.8.53.74 1.36-.05.83-.93 1.2-.98 2.02-.06.78.33 1.24.72 1.62"
-                  ></path>
-                  <path
-                    d="M6.25 3c.27.1.8.53.75 1.36-.06.83-.93 1.2-1 2.02-.05.78.34 1.24.74 1.62"
-                  ></path>
-                </svg>
+            <a href="./pages/receita.html">
+              <div class="categoria-item">
+                <div class="icone-categoria">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-soup size-6"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 21a9 9 0 0 0 9-9H3a9 9 0 0 0 9 9Z"></path>
+                    <path d="M7 21h10"></path>
+                    <path d="M19.5 12 22 6"></path>
+                    <path
+                      d="M16.25 3c.27.1.8.53.75 1.36-.06.83-.93 1.2-1 2.02-.05.78.34 1.24.73 1.62"
+                    ></path>
+                    <path
+                      d="M11.25 3c.27.1.8.53.74 1.36-.05.83-.93 1.2-.98 2.02-.06.78.33 1.24.72 1.62"
+                    ></path>
+                    <path
+                      d="M6.25 3c.27.1.8.53.75 1.36-.06.83-.93 1.2-1 2.02-.05.78.34 1.24.74 1.62"
+                    ></path>
+                  </svg>
+                </div>
+                <h3>Título da Categoria</h3>
+                <p>descrição curta da categoria</p>
               </div>
-              <h3>Título da Categoria</h3>
-              <p>descrição curta da categoria</p>
-            </div>
+            </a>
 
-            <div class="categoria-item">
-              <div class="icone-categoria">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
+            <a href="./pages/receita.html">
+              <div class="categoria-item">
+                <div class="icone-categoria">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -585,12 +597,13 @@
               <p>descrição curta da categoria</p>
             </div>
 
-            <div class="categoria-item">
-              <div class="icone-categoria">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
+            <a href="./pages/receita.html">
+              <div class="categoria-item">
+                <div class="icone-categoria">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -623,7 +636,7 @@
                 Cada receita da Receitaria é pensada para o dia a dia: poucos
                 ingredientes, técnicas acessíveis e muito sabor.
               </p>
-              <a class="cta-receita" href="/sobre.html">
+              <a class="cta-receita" href="./pages/sobre.html">
                 Conheça o projeto
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -671,7 +684,7 @@
             Inscreva-se e receba seleções de receitas saudáveis direto no seu
             e-mail.
           </p>
-          <form action="/pages/inscricao-realizada.html">
+          <form action="./pages/inscricao-realizada.html">
             <label class="oculto" for="email">Email</label>
             <div class="pesquisa-receita">
               <input
@@ -689,7 +702,7 @@
     <footer class="footer">
       <div class="container-wrap">
         <div class="container-item logo">
-          <a href="/">
+          <a href="./">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -721,13 +734,13 @@
           <nav class="menu">
             <ul class="lista">
               <li class="menu-item pagina-atual">
-                <a href="/" class="link">Início</a>
+                <a href="./" class="link">Início</a>
               </li>
               <li class="menu-item">
-                <a href="/pages/receitas.html" class="link">Receitas</a>
+                <a href="./pages/receitas.html" class="link">Receitas</a>
               </li>
               <li class="menu-item">
-                <a href="/pages/contato.html" class="link">Contato</a>
+                <a href="./pages/contato.html" class="link">Contato</a>
               </li>
             </ul>
           </nav>
