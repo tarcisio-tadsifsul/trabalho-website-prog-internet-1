@@ -75,6 +75,7 @@ h4 {
   color: var(--branco);
   font-size: 1.4rem;
   font-family: var(--font-texto);
+  line-height: 1.6;
   padding: 0.5rem 1rem;
   border-radius: 10px;
   background: var(--primaria);
@@ -82,9 +83,21 @@ h4 {
   box-shadow: 0 1px 3px #1f05086e;
 }
 
-.cta-receita .svg-seta {
-  width: 1.8rem;
-  height: 1.8rem;
+.cta-receita .svg-seta,
+.cta-ver-receitas .svg-seta {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.cta-ver-receitas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+  padding-left: 1rem;
+  line-height: 1.6;
+  order: 10;
 }
 
 /* Form Pesquisa */
@@ -427,53 +440,52 @@ h4 {
   grid-template-columns: 1fr;
   gap: 2rem;
   /* padding-top: 2.4rem; */
-
-  .hero-item {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-  }
-
-  .hero-item .selo {
-    background-color: var(--fundo-claro);
-    color: var(--texto);
-    font-size: 1.2rem;
-    font-weight: 300;
-    padding: 0.5rem 1.2rem;
-    border-radius: 10px;
-    width: max-content;
-    text-transform: uppercase;
-  }
-
-  .hero-item .titulo {
-    font-size: clamp(3rem, 4rem, 5rem);
-    max-width: 40rem;
-  }
-
-  .hero-item .destaque {
-    color: var(--primaria);
-  }
-
-  .hero-item p {
-    max-width: 500px;
-    font-weight: 400;
-    margin-bottom: 1.6rem;
-  }
-
-  .hero-item #form-pesquisa {
-    scroll-margin-top: 10rem;
-  }
-
-  .hero-item .cta-receita {
-    display: none;
-  }
-
-  .hero-item .img-hero {
-    border-radius: 1rem;
-  }
-
-  /* fim hero */
 }
+.hero .hero-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.hero .hero-item .selo {
+  background-color: var(--fundo-claro);
+  color: var(--texto);
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  width: max-content;
+  text-transform: uppercase;
+}
+
+.hero .hero-item .titulo {
+  font-size: clamp(3rem, 4rem, 5rem);
+  max-width: 40rem;
+}
+
+.hero .hero-item .destaque {
+  color: var(--primaria);
+}
+
+.hero .hero-item p {
+  max-width: 500px;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+}
+
+.hero .hero-item #form-pesquisa {
+  scroll-margin-top: 10rem;
+}
+
+.hero .hero-item .cta-receita {
+  display: none;
+}
+
+.hero .hero-item .img-hero {
+  border-radius: 1rem;
+}
+
+/* fim hero */
 
 /* RECEITA DIA */
 .receita-dia {
@@ -483,62 +495,59 @@ h4 {
   background-color: var(--fundo-claro);
   border: 1px solid var(--borda-suave);
   border-radius: 1rem;
+}
+.receita-dia .infos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
 
-  .infos {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
-  }
+.receita-dia hgroup h2 {
+  font-family: var(--font-texto);
+  font-size: 1.4rem;
+  color: var(--texto-suave);
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  letter-spacing: 0.02rem;
+}
 
-  hgroup h2 {
-    font-family: var(--font-texto);
-    font-size: 1.4rem;
-    color: var(--texto-suave);
-    text-transform: uppercase;
-    padding-bottom: 1rem;
-    letter-spacing: 0.02rem;
-  }
+.receita-dia hgroup h3 {
+  font-size: clamp(3rem, 3.2rem, 3.5rem);
+}
 
-  hgroup h3 {
-    font-size: clamp(3rem, 3.2rem, 3.5rem);
-  }
+.receita-dia .detalhes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 
-  .detalhes {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
+.receita-dia .detalhes .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: 50px;
+  padding: 0.3rem 1.2rem;
+}
 
-  .detalhes .item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.8rem;
-    background-color: var(--branco);
-    border: 1px solid var(--borda);
-    border-radius: 50px;
-    padding: 0.3rem 1.2rem;
-  }
+.receita-dia .detalhes .item svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  stroke: var(--texto-cinza);
+}
 
-  .detalhes .item svg {
-    width: 1.3rem;
-    height: 1.3rem;
-    stroke: var(--texto-cinza);
-  }
+.receita-dia .detalhes .item p {
+  font-size: 1.3rem;
+  max-width: 500px;
+  color: var(--texto-cinza);
+}
 
-  .detalhes .item p {
-    font-size: 1.3rem;
-    max-width: 500px;
-    color: var(--texto-cinza);
-  }
-
-  .img-receita img {
-    border-radius: 1rem 1rem 0 0;
-  }
-
-  /* fim receita dia */
+.receita-dia .img-receita img {
+  border-radius: 1rem 1rem 0 0;
 }
 
 /* DESTAQUE SEMANA */
@@ -549,15 +558,6 @@ h4 {
 
   p {
     margin-bottom: 1rem;
-  }
-
-  .cta-ver-todas {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    font-size: 1.4rem;
-    padding-left: 1rem;
-    order: 10;
   }
 
   /*fim destaques*/
@@ -704,7 +704,7 @@ h4 {
 
 /*===========================================*/
 
-/* Página Receitas */
+/* Página Receitas - Catalogo */
 
 .section-categorias {
   display: grid;
@@ -743,6 +743,80 @@ h4 {
 .bloco-categorias .titulo-categoria span {
   font-size: 1.5rem;
   color: var(--texto-cinza);
+}
+
+/*=============================================*/
+/* Página Receita Interna */
+
+.artigo-receita .cta-ver-receitas {
+  color: var(--texto-cinza);
+  padding: 0;
+  margin-bottom: 4rem;
+}
+
+.hero-receita {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  gap: 3rem;
+}
+
+.hero-receita .infos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-receita .infos .categoria-receita {
+  font-family: var(--font-texto);
+  font-size: 1.4rem;
+  color: var(--texto-suave);
+  text-transform: uppercase;
+  letter-spacing: 0.02rem;
+}
+
+.hero-receita .infos h1 {
+  font-family: var(--fonte-titulos);
+  font-size: clamp(3rem, 3.2rem, 3.5rem);
+  color: var(--texto);
+  letter-spacing: 0.02rem;
+}
+
+.hero-receita .infos > p {
+  margin-bottom: 2rem;
+}
+
+.hero-receita .detalhes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.hero-receita .detalhes .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: 50px;
+  padding: 0.3rem 1.2rem;
+}
+
+.hero-receita .detalhes .item svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  stroke: var(--texto-cinza);
+}
+
+.hero-receita .detalhes .item p {
+  font-size: 1.3rem;
+  max-width: 500px;
+  color: var(--texto-cinza);
+}
+
+.hero-receita .img-receita img {
+  border-radius: 1rem;
 }
 
 /* ==========================================
@@ -848,26 +922,26 @@ h4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
+  }
+  .receita-dia infos {
+    padding: 4.8rem;
+  }
 
-    .infos {
-      padding: 4.8rem;
-    }
-
-    .img-receita img {
-      border-radius: 0 1rem 1rem 0;
-      padding: 0.2rem;
-      width: 100%;
-      height: 500px;
-      object-fit: cover;
-      object-position: center;
-    }
+  .receita-dia.img-receita img {
+    border-radius: 0 1rem 1rem 0;
+    padding: 0.2rem;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
   }
 
   /* DESTAQUES SEMANA */
   .destaques {
     position: relative;
   }
-  .destaques .cta-ver-todas {
+  .destaques .cta-ver-receitas {
+    display: flex;
     position: absolute;
     right: 0;
     top: 4.8rem;
