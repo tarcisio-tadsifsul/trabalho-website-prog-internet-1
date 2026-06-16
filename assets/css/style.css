@@ -447,6 +447,10 @@ h4 {
   gap: 1.6rem;
 }
 
+.hero .hero-item.imagem {
+  order: -1;
+}
+
 .hero .hero-item .selo {
   background-color: var(--fundo-claro);
   color: var(--texto);
@@ -747,11 +751,16 @@ h4 {
 
 /*=============================================*/
 /* Página Receita Interna */
+.artigo-receita {
+  display: grid;
+  gap: 4.8rem;
+}
 
 .artigo-receita .cta-ver-receitas {
   color: var(--texto-cinza);
   padding: 0;
-  margin-bottom: 4rem;
+  margin-bottom: -20px;
+  order: -1;
 }
 
 .hero-receita {
@@ -768,10 +777,14 @@ h4 {
 
 .hero-receita .infos .categoria-receita {
   font-family: var(--font-texto);
-  font-size: 1.4rem;
-  color: var(--texto-suave);
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: var(--fundo-claro);
+  color: var(--primaria);
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  width: max-content;
   text-transform: uppercase;
-  letter-spacing: 0.02rem;
 }
 
 .hero-receita .infos h1 {
@@ -815,8 +828,210 @@ h4 {
   color: var(--texto-cinza);
 }
 
+.hero-receita .img-receita {
+  order: -1;
+}
+
 .hero-receita .img-receita img {
   border-radius: 1rem;
+}
+
+.midia {
+  display: grid;
+  gap: 3rem;
+}
+
+.midia .video video {
+  border-radius: 1rem;
+  height: 330px;
+  background: var(--fundo-claro);
+  border: 1px solid var(--borda-suave);
+  object-fit: cover;
+  object-position: center;
+}
+
+.midia .audio {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--branco);
+  padding: 2rem;
+  border-radius: 1rem;
+  /* border: 1px solid var(--borda-suave); */
+  border: 1px solid var(--borda);
+}
+
+.midia .audio .icone-audio {
+  padding: 1rem;
+  background-color: var(--fundo-claro);
+  width: max-content;
+  border-radius: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.midia .audio p {
+  color: var(--texto-cinza);
+}
+
+.modo-preparo {
+  display: grid;
+  gap: 3rem;
+}
+
+.modo-preparo h2 {
+  margin-bottom: 1.6rem;
+}
+
+.modo-preparo .ingredientes ul {
+  display: inline-flex;
+  flex-direction: column;
+  padding-inline-start: 1rem;
+}
+
+.modo-preparo .ingredientes li {
+  list-style-type: none;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  padding-block: 1rem;
+  width: 100%;
+  background-color: var(--fundo-claro);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.modo-preparo .ingredientes li:hover {
+  background-color: #cd909742;
+}
+
+.modo-preparo .ingredientes input {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.modo-preparo .ingredientes label {
+  line-height: 1;
+  width: 100%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.modo-preparo .ingredientes input:checked + label {
+  color: var(--texto-cinza);
+  text-decoration: line-through;
+}
+
+.modo-preparo .passos ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.modo-preparo .passos ul li {
+  display: flex;
+  gap: 1rem;
+}
+
+.modo-preparo .passos ul li span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: var(--fonte-titulos);
+  color: var(--primaria);
+  background-color: var(--fundo-claro);
+  border-radius: 50%;
+  padding: 1rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+}
+
+.modo-preparo .passos ul li:hover span {
+  background-color: #cd909742;
+}
+
+.modo-preparo .passos ul li input {
+  position: absolute;
+  left: -5000px;
+}
+
+.modo-preparo .passos label {
+  font-size: 1.6rem;
+  padding-top: 6px;
+}
+
+.modo-preparo .passos input:checked + label {
+  color: var(--texto-cinza);
+  text-decoration: line-through;
+}
+
+.modo-preparo .passos ul li p {
+  padding-top: 6px;
+}
+
+.tabela {
+  background-color: var(--branco);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--borda-suave);
+}
+
+.tabela table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela caption {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.tabela caption p {
+  font-size: 1.4rem;
+  color: var(--texto-cinza);
+}
+
+.tabela thead {
+  border-bottom: 1px solid var(--borda-suave);
+}
+
+.tabela thead tr {
+  background-color: var(--fundo-claro);
+}
+
+.tabela th,
+.tabela td,
+.tabela tr {
+  padding: 0.5rem;
+}
+
+.tabela thead th {
+  color: var(--texto-suave);
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.tabela tbody th {
+  font-weight: 600;
+  color: var(--texto-suave);
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.tabela tbody tr td {
+  padding-inline: 1rem;
+  font-weight: 600;
+}
+
+.tabela tbody tr:nth-child(even) {
+  background-color: var(--fundo-claro);
 }
 
 /* ==========================================
@@ -904,6 +1119,9 @@ h4 {
     gap: 3.6rem;
     padding-top: 1.6rem;
 
+    .hero-item.imagem {
+      order: initial;
+    }
     .hero-item .img-hero {
       border-radius: 1rem;
       height: 420px;

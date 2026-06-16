@@ -174,7 +174,7 @@
             Voltar para Receitas
           </a>
 
-          <header class="hero-receita">
+          <section class="hero-receita">
             <div class="infos">
               <span class="categoria-receita">Pratos Quentes</span>
               <h1>Sopa Cremosa de Abóbora</h1>
@@ -256,14 +256,13 @@
             <div class="img-receita">
               <img src="../assets/img/sopa-abobora.webp" alt="" />
             </div>
-          </header>
+          </section>
 
           <section class="midia">
             <div class="video">
               <video
                 preload
                 controls
-                muted
                 poster="../assets/video/thumb-sopa-cremosa-abobora.webp"
                 width="100%"
                 height="auto"
@@ -297,41 +296,89 @@
                 </svg>
               </div>
               <h2>Áudio Descrição</h2>
-              <p>
-                Ouça o passo a passo enquanto cozinha — acessível e prático.
-              </p>
-              <audio src=""></audio>
+              <p>Ouça o passo a passo enquanto cozinha, acessível e prático.</p>
+              <audio controls preload>
+                <source
+                  src="../assets/audio/audio-sopa-cremosa-abobora.wav"
+                  type="audio/wav"
+                />
+                Seu navegador não suporta a reprodução deste áudio.
+              </audio>
             </div>
           </section>
 
           <section class="modo-preparo">
             <div class="ingredientes">
+              <h2>Ingredientes</h2>
               <ul>
-                <li>600g de Abóbora CAbotiá</li>
-                <li>1 Cebola</li>
-                <li>2 Dentes de Alho</li>
-                <li>500ml de Caldo de Legumes</li>
-                <li>Azeite</li>
-                <li>Pimenta a gosto</li>
-                <li>Sal a gosto</li>
+                <li>
+                  <input type="checkbox" name="" id="abobora" />
+                  <label for="abobora">600g de Abóbora Cabotiá</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" id="cebola" />
+                  <label for="cebola">1 Cebola</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" id="alho" />
+                  <label for="alho">2 Dentes de Alho</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" id="caldo" />
+                  <label for="caldo">500ml de Caldo de Legumes</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" id="azeite" />
+                  <label for="azeite">Azeite</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" id="pimenta" />
+                  <label for="pimenta">Pimenta a gosto</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" id="sal" />
+                  <label for="sal">Sal a gosto</label>
+                </li>
               </ul>
             </div>
             <div class="passos">
+              <h2>Passo a Passo</h2>
               <ul>
-                <li>Refogue cebola, alho e gengibre no azeite.</li>
-                <li>Junte a abóbora em cubos e o caldo.</li>
-                <li>Cozinhe até amaciar.</li>
-                <li>Bata tudo até obter um creme liso.</li>
-                <li>Ajuste o sal.</li>
+                <li>
+                  <span>1</span>
+                  <input type="checkbox" name="" id="refogar" />
+                  <label for="refogar"
+                    >Refogue cebola, alho e gengibre no azeite.
+                  </label>
+                </li>
+                <li>
+                  <span>2</span>
+                  <input type="checkbox" name="" id="juntar" />
+                  <label for="juntar">
+                    Junte a abóbora em cubos e o caldo. Cozinhe até amaciar.
+                  </label>
+                </li>
+                <li>
+                  <span>3</span>
+                  <input type="checkbox" name="" id="bater" />
+                  <label for="bater">
+                    Bata tudo até obter um creme liso.
+                  </label>
+                </li>
+                <li>
+                  <span>5</span>
+                  <input type="checkbox" name="" id="ajustar" />
+                  <label for="ajustar"> Ajuste o sal e a pimenta. </label>
+                </li>
               </ul>
             </div>
           </section>
 
-          <section class="tabela-nutricional">
+          <section class="tabela">
             <table>
               <caption>
                 <h2>Tabela nutricional</h2>
-                <p>valores aproximados por porção</p>
+                <p>Valores aproximados por porção</p>
               </caption>
               <thead>
                 <tr>
@@ -342,23 +389,23 @@
 
               <tbody>
                 <tr>
-                  <td>Calorias</td>
+                  <th scope="row">Calorias</th>
                   <td>220 kcal</td>
                 </tr>
                 <tr>
-                  <td>Proteínas</td>
+                  <th scope="row">Proteínas</th>
                   <td>5g</td>
                 </tr>
                 <tr>
-                  <td>Carboidratos</td>
+                  <th scope="row">Carboidratos</th>
                   <td>30g</td>
                 </tr>
                 <tr>
-                  <td>Gosduras</td>
+                  <th scope="row">Gosduras</th>
                   <td>8g</td>
                 </tr>
                 <tr>
-                  <td>Fibras</td>
+                  <th scope="row">Fibras</th>
                   <td>6g</td>
                 </tr>
               </tbody>
