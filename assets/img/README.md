@@ -129,9 +129,9 @@ O layout foi planejado utilizando:
 
 - **Tipografia:** `Fraunces` (Títulos) e `Inter` (Textos) via Google Fonts.
 - **Paleta de Cores:**
-  - 🔴 Principal:
-  - ⚪ Fundo:
-  - 🔵 Contraste:
+  - Principal: #9b424d
+  - Fundo: #fafbf2
+  - Contraste: #f3ba26
 
 ---
 
@@ -139,14 +139,19 @@ O layout foi planejado utilizando:
 
 ```bash
 /
-├── index.html
+├── assets/
+│   ├── audio/
+│   ├── css/
+│   ├── fonts/
+│   ├── img/
+│   └── videos/
+├── docs/
+│   ├── wireframes/
+│   └── planejamento.md
 ├── pages/
 │   ├── receitas.html
 │   ├── receita.html
 │   ├── sobre.html
 │   └── contato.html
-├── assets/
-│   ├── css/
-│   │   └── styles.css
-└── └── img/
+└── index.html
 ```
