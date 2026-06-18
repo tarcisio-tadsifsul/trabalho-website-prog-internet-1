@@ -148,7 +148,7 @@ O layout foi planejado utilizando:
 ├── docs/
 │   ├── wireframes/
 │   └── planejamento.md
-├── pages/
+├── pagina/
 │   ├── receitas.html
 │   ├── receita.html
 │   ├── sobre.html

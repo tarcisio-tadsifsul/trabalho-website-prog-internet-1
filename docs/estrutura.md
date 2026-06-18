@@ -3,7 +3,7 @@
 ```bash
 /
 ├── index.html
-├── pages/
+├── pagina/
 │   ├── receitas.html
 │   ├── receita.html
 │   ├── sobre.html
@@ -19,10 +19,10 @@
 ## Páginas Principais
 
 - `index.html`
-- `pages/receitas.html`
-- `pages/receita.html`
-- `pages/sobre.html`
-- `pages/contato.html`
+- `pagina/receitas.html`
+- `pagina/receita.html`
+- `pagina/sobre.html`
+- `pagina/contato.html`
 
 ## Recursos Estáticos
 
