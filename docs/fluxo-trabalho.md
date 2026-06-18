@@ -71,16 +71,12 @@ Agora começa a transição para a parte técnica, mas ainda sem estilizar e apl
 
 [✓] Desenvolver a estrutura semântica de cada página com HTML5, garantindo que o conteúdo esteja organizado e acessível.
 
-[] Com a estrutura semântica pronta, desenvolver o estilo com css.
+[✓] Com a estrutura semântica pronta, desenvolver o estilo com css.
 
-[] Defina as variáveis CSS (cores, tipografia) se optar por usá-las, o que facilita muito a manutenção.
+[✓] Defina as variáveis CSS (cores, tipografia) se optar por usá-las, o que facilita muito a manutenção.
 
-Lembrar: css/
-style.css
-reset.css
-
-[] Construa o layout base de cada página utilizando Grid e Flexbox.
-[] Aplique as media queries para garantir que o site se adapte corretamente à tela do celular e do desktop.
+[✓] Construa o layout base de cada página utilizando Grid e Flexbox.
+[✓] Aplique as media queries para garantir que o site se adapte corretamente à tela do celular e do desktop.
 
 ---
 
@@ -88,10 +84,10 @@ reset.css
 
 A etapa final de revisão de qualidade e preparação para a nota.
 
-[] Revise o código para garantir que você entende toda a lógica, pois o uso de IA sem capacidade de explicação resultará em nota zero na apresentação.
-[] Revisar arquivos de design e readme para adicionar informações de design, fontes, cores e outras decisões visuais.
-[] Redija o relatório em formato ".pdf" descrevendo cada página da aplicação, o que faz, como faz e sua relação com as demais.
-[] Estruture o documento com capa, sumário e elementos textuais.
-[] Compacte a pasta do projeto ou prepare o link sem restrições de acesso e senhas no Github/Drive.
+[✓] Revise o código para garantir que você entende toda a lógica, pois o uso de IA sem capacidade de explicação resultará em nota zero na apresentação.
+[✓] Revisar arquivos de design e readme para adicionar informações de design, fontes, cores e outras decisões visuais.
+[ ] Redija o relatório em formato ".pdf" descrevendo cada página da aplicação, o que faz, como faz e sua relação com as demais.
+[ ] Estruture o documento com capa, sumário e elementos textuais.
+[ ] Compacte a pasta do projeto ou prepare o link sem restrições de acesso e senhas no Github/Drive.
 
 ---
