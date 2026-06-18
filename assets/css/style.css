@@ -86,8 +86,15 @@ h4 {
   padding: 0.5rem 1rem;
   border-radius: 10px;
   background: var(--primaria);
-  transition: all 0.5s;
   box-shadow: 0 1px 3px #1f05086e;
+  transform: scale(1);
+  transition: all 0.5s ease;
+  will-change: transform;
+}
+
+.cta-receita:hover {
+  transform: scale(0.98);
+  box-shadow: none;
 }
 
 .cta-receita .svg-seta,
@@ -130,7 +137,7 @@ h4 {
 
 .pesquisa-receita .input-pesquisa {
   border: none;
-  max-width: 180px;
+  width: 100%;
   font-size: 1.4rem;
 }
 
@@ -220,6 +227,32 @@ h4 {
   margin: 0;
 }
 
+/* BOTÃO CONTATO FLUTUANTE */
+.contato-flutuante a {
+  display: flex;
+  justify-content: center;
+  background-color: var(--branco);
+  padding: 1.2rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 3.6rem;
+  right: 3.6rem;
+  z-index: 999;
+  box-shadow: 0 1px 3px 1px var(--texto-cinza);
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+.contato-flutuante a:hover {
+  transform: scale(1.05);
+}
+
+.contato-flutuante svg {
+  flex-shrink: 0;
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
 /* ==========================================
    ESTILO BASE (Mobile - Telas pequenas)
    ========================================== */
@@ -303,7 +336,7 @@ h4 {
 
 .header .menu-mobile .lista-menu-mobile {
   position: absolute;
-  top: 2rem;
+  top: 4rem;
   right: 0;
   background-color: var(--fundo);
   box-shadow: 0 0 3px 1px #54545430;
@@ -317,7 +350,7 @@ h4 {
   align-items: flex-end;
   gap: 1rem;
   opacity: 0;
-  transform: translateY(-20rem);
+  transform: translateX(10rem);
   pointer-events: none;
   transition:
     transform 0.4s ease,
@@ -326,7 +359,7 @@ h4 {
 
 .header .icon-menu-mobile input#menu-hamburguer:checked ~ .lista-menu-mobile {
   opacity: 1;
-  transform: translateY(2rem);
+  transform: translateX(0);
   pointer-events: auto;
   z-index: 10;
 }
@@ -349,8 +382,10 @@ h4 {
 
 /* FOOTER */
 .footer {
+  display: grid;
+  gap: 5rem;
   width: 100%;
-  padding: 1.6rem;
+  padding: 2.4rem 1.6rem 2rem;
   background: var(--fundo);
   border-top: 1px solid #dae1d3;
 }
@@ -729,6 +764,15 @@ h4 {
   background-color: var(--texto-suave);
   color: var(--branco);
   box-shadow: 0 1px 2px 1px #1f050845;
+  transform: scale(1);
+  transition: all 0.5s ease;
+  will-change: transform;
+}
+
+.newsletter .form-newsletter input[type="submit"]:hover {
+  cursor: pointer;
+  transform: scale(0.98);
+  box-shadow: none;
 }
 
 /* fim newsletter */
@@ -1292,13 +1336,22 @@ h4 {
 }
 
 .formularios input[type="submit"] {
-  background-color: var(--destaque);
-  border: 1px solid #ca9509;
+  background-color: rgba(243, 186, 38, 0.85);
+  transition: background-color 0.5s ease;
+  border: 1px solid rgb(243, 186, 38);
   border-radius: 1rem;
   padding: 0.8rem 1.2rem;
   font-size: 1.3rem;
   font-weight: 600;
   text-transform: uppercase;
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+
+.formularios input[type="submit"]:hover {
+  background-color: rgba(243, 186, 38, 1);
+  transform: scale(0.98);
+  cursor: pointer;
 }
 
 /* ==========================================
@@ -1339,6 +1392,7 @@ h4 {
   /* FOOTER */
   .footer {
     padding: 3.6rem;
+    gap: 1rem;
   }
   .footer .container-pai {
     flex-direction: column;
@@ -1447,10 +1501,8 @@ h4 {
   }
 
   /* CATEGORIAS */
-  .categorias {
-    .grid-categorias {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
+  .categorias .grid-categorias {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   /* SOBRE */
