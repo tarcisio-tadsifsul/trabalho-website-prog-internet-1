@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Meta Tags -->
-    <title>Receitaria - Catálogo de Receitas</title>
+    <title>Receitaria - Comida simples para o dia a dia</title>
     <meta
       name="description"
-      content="Catálogo de Receitas simples e fáceis para aprender."
+      content="Receitas simples e fáceis para aprender."
     />
     <link
       rel="shortcut icon"
@@ -23,7 +23,7 @@
     />
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
-  <body>
+  <body id="pagina-sobre">
     <header class="header">
       <div class="container-pai">
         <div class="logo">
@@ -152,63 +152,44 @@
       </div>
     </header>
     <main class="conteudo">
-      <a class="cta-ver-todas" href="./receitas.html">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="svg-seta"
-        >
-          <path d="m12 19-7-7 7-7" />
-          <path d="M19 12H5" />
-        </svg>
-        Voltas para Receitas
-      </a>
       <div class="container-pai">
         <!-- Sobre -->
-        <section id="sobre">
-          <div class="banner-sobre">
-            <div class="img-banner">
-              <img
-                src="./assets/img/bastidores.webp"
-                alt="bastidores da cozinha"
-              />
-            </div>
-            <div class="conteudo-banner">
-              <h2 class="titulo">Cozinha simples, ingredientes honestos</h2>
-              <p>
-                Cada receita da Receitaria é pensada para o dia a dia: poucos
-                ingredientes, técnicas acessíveis e muito sabor.
-              </p>
-              <a class="cta-receita" href="./sobre.html">
-                Conheça o projeto
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="svg-seta"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14"></path>
-                  <path d="m12 5 7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
+        <header class="header-sobre">
+          <h1>Sobre</h1>
+          <p>Cozinhar é um ato de cuidado.</p>
+        </header>
+        <div class="conteudo-sobre">
+          <figure>
+            <img src="../assets/img/autora.webp" alt="Chef Marina Cozina" />
+            <figcaption>
+              <span class="nome">Marina Cozina</span>
+              <span class="profissao"
+                >Nutricionista e criadora do Receitaria</span
+              >
+            </figcaption>
+          </figure>
+          <div class="texto-sobre">
+            <p>
+              O Receitaria nasceu da vontade de mostrar que comer bem pode ser
+              simples, prazeroso e acessível. Aqui, cada receita é desenvolvida
+              com ingredientes reais e técnicas que cabem na rotina.
+            </p>
+            <p>
+              Sou Marina, nutricionista há mais de uma década e apaixonada por
+              cozinhar. Acredito que pequenas escolhas diárias na cozinha
+              transformam a forma como nos sentimos, com mais energia, leveza e
+              disposição.
+            </p>
+            <p>
+              Neste espaço você encontra desde receitas rápidas para semanas
+              corridas até pratos especiais para reunir quem você ama. Tudo
+              testado e aprovado em casa.
+            </p>
+            <blockquote>
+              “A melhor comida é aquela feita com presença.”
+            </blockquote>
           </div>
-        </section>
-
+        </div>
         <!-- Newsletter -->
         <section class="newsletter">
           <div class="emblema">
@@ -238,7 +219,10 @@
             Inscreva-se e receba seleções de receitas saudáveis direto no seu
             e-mail.
           </p>
-          <form class="form-newsletter" action="./inscricao-realizada.html">
+          <form
+            class="form-newsletter"
+            action="./pages/inscricao-realizada.html"
+          >
             <label class="oculto" for="email">Email</label>
             <input
               type="text"
@@ -289,13 +273,13 @@
                 <a href="./" class="link">Início</a>
               </li>
               <li class="menu-item">
-                <a href="./receitas.html" class="link">Receitas</a>
+                <a href="./pages/receitas.html" class="link">Receitas</a>
               </li>
               <li class="menu-item">
-                <a href="./sobre.html" class="link">Sobre</a>
+                <a href="./pages/sobre.html" class="link">Sobre</a>
               </li>
               <li class="menu-item">
-                <a href="./contato.html" class="link">Contato</a>
+                <a href="./pages/contato.html" class="link">Contato</a>
               </li>
             </ul>
           </nav>
