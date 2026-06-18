@@ -151,8 +151,8 @@
     <main class="conteudo">
       <div class="container-pai">
         <!-- Contato -->
-        <header>
-          <span>Fale Conosco</span>
+        <header class="titulo-topo">
+          <span class="texto-decor">Fale Conosco</span>
           <h1 class="titulo-h1">Contato & Envie sua receita</h1>
           <p>
             Tem uma receita para compartilhar ou uma dúvida? Adoraríamos ouvir
@@ -181,6 +181,7 @@
             </svg>
             Contato
           </label>
+
           <input type="radio" name="btn-alternar" id="form-receita" />
           <label class="label" for="form-receita">
             <svg
@@ -202,11 +203,11 @@
                 d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"
               />
             </svg>
-            Enviar receita
+            Receita
           </label>
 
           <div class="enviar" id="enviar-contato">
-            <form action="./pages/enviado-sucesso.html">
+            <form action="./pages/enviado-sucesso.html" method="post">
               <div class="campo">
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome" />
@@ -217,14 +218,14 @@
               </div>
               <div class="campo">
                 <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem"></textarea>
+                <textarea name="mensagem" id="mensagem" rows="4"></textarea>
               </div>
               <input type="submit" value="Enviar Mensagem" />
             </form>
           </div>
 
           <div class="enviar" id="enviar-receita">
-            <form action="./pages/enviado-sucesso.html">
+            <form action="./pages/enviado-sucesso.html" method="post">
               <div class="campo">
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome" />
@@ -234,64 +235,68 @@
                 <input type="email" name="email" id="email" />
               </div>
               <div class="campo">
-                <label for="titulo-receita">Nome</label>
+                <label for="titulo-receita">Título da Receita</label>
                 <input type="text" name="titulo-receita" id="titulo-receita" />
               </div>
               <div class="campo">
                 <label for="ingredientes">Ingredientes (um por linha)</label>
-                <textarea name="ingredientes" id="ingredientes"></textarea>
+                <textarea
+                  name="ingredientes"
+                  id="ingredientes"
+                  rows="6"
+                  placeholder="- Proteína&#10;- Legumes&#10;- Temperos&#10;- Sal e pimenta a gosto..."
+                ></textarea>
               </div>
               <div class="campo">
-                <label for="modo-preparar">Ingredientes (um por linha)</label>
-                <textarea name="modo-preparar" id="modo-preparar"></textarea>
+                <label for="modo-preparar">Modo de Preparo</label>
+                <textarea
+                  name="modo-preparar"
+                  id="modo-preparar"
+                  rows="6"
+                  placeholder="1. Picar e descascar&#10;2. Misturar&#10;3. Cozinhar&#10;4. Experimentar..."
+                ></textarea>
               </div>
               <input type="submit" value="Enviar Receita" />
             </form>
           </div>
         </div>
 
-        <!-- Newsletter -->
-        <section class="newsletter">
-          <div class="emblema">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#fff"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="svg-mailbox"
-            >
-              <path
-                d="M22 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.5C2 7 4 5 6.5 5H18c2.2 0 4 1.8 4 4v8Z"
+        <!-- Sobre -->
+        <section id="sobre">
+          <div class="banner-sobre">
+            <div class="img-banner">
+              <img
+                src="../assets/img/bastidores.webp"
+                alt="bastidores da cozinha"
               />
-              <polyline points="15,9 18,9 18,11" />
-              <path d="M6.5 5C9 5 11 7 11 9.5V17a2 2 0 0 1-2 2" />
-              <line x1="6" x2="7" y1="10" y2="10" />
-            </svg>
-            <h2>Newsletter</h2>
+            </div>
+            <div class="conteudo-banner">
+              <h2 class="titulo">Cozinha simples, ingredientes honestos</h2>
+              <p>
+                Cada receita da Receitaria é pensada para o dia a dia: poucos
+                ingredientes, técnicas acessíveis e muito sabor.
+              </p>
+              <a class="cta-receita" href="./pages/sobre.html">
+                Conheça o projeto
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="svg-seta"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
           </div>
-          <h3>Receitas práticas toda semana</h3>
-          <p>
-            Inscreva-se e receba seleções de receitas saudáveis direto no seu
-            e-mail.
-          </p>
-          <form
-            class="form-newsletter"
-            action="./pages/inscricao-realizada.html"
-          >
-            <label class="oculto" for="email">Email</label>
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="seu@email.com"
-            />
-            <input type="submit" value="Inscrever" />
-          </form>
         </section>
       </div>
     </main>

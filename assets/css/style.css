@@ -1147,13 +1147,13 @@ h4 {
 
 /*=============================================*/
 /* Página Contato */
-#pagina-contato header {
+#pagina-contato .titulo-topo {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
-#pagina-contato header span {
+#pagina-contato .texto-decor {
   font-family: var(--font-texto);
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -1161,35 +1161,137 @@ h4 {
   text-align: center;
 }
 
-#pagina-contato header h1 {
+#pagina-contato h1 {
   text-align: center;
 }
 
-#pagina-contato header p {
+#pagina-contato .titulo-topo p {
   font-family: var(--font-texto);
   color: var(--texto-cinza);
   font-size: 1.6rem;
   text-align: center;
 }
 
-#pagina-contato .formularios input[type="radio"] {
+.formularios {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  max-width: 560px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--branco);
+  padding: 2.2rem;
+  border: 1px solid var(--borda);
+  border-radius: 1rem;
+  position: relative;
+}
+
+.formularios::before {
+  content: "";
+  background-color: #cd90979c;
+  border-radius: 1rem;
+  width: 90%;
+  height: 46px;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+}
+
+.formularios input[type="radio"] {
   opacity: 0;
   position: absolute;
   pointer-events: none;
 }
 
-#pagina-contato .formularios .label {
+.formularios .label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 136px;
+  width: 100%;
+  background-color: var(--fundo-claro);
+  border-radius: 1rem;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1.4rem;
+  font-size: 1.4rem;
   cursor: pointer;
+  z-index: 10;
+  color: var(--texto-cinza);
 }
 
-#pagina-contato .enviar {
+.formularios .label:nth-child(2) {
+  justify-self: flex-end;
+}
+.formularios .label:nth-child(4) {
+  justify-self: flex-start;
+}
+
+#form-contato:checked + label,
+#form-receita:checked + label {
+  color: var(--branco);
+  background-color: var(--primaria);
+}
+
+.formularios .label svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.formularios .enviar {
   display: none;
 }
 
 #form-contato:checked ~ #enviar-contato,
 #form-receita:checked ~ #enviar-receita {
   display: grid;
+  grid-column: span 2;
   gap: 2rem;
+}
+
+.formularios .enviar form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.formularios .campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formularios .campo label {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.formularios .campo input,
+.formularios .campo textarea {
+  font-size: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--borda);
+  box-shadow: 0 1px 2px 1px #cd909736;
+}
+
+.formularios .campo input:focus-visible,
+.formularios .campo textarea:focus-visible {
+  outline: none;
+  border: 1px solid var(--primaria);
+}
+
+.formularios input[type="submit"] {
+  background-color: var(--destaque);
+  border: 1px solid #ca9509;
+  border-radius: 1rem;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 /* ==========================================
@@ -1431,6 +1533,12 @@ h4 {
   .conteudo-sobre .nome,
   .conteudo-sobre .profissao {
     text-align: center;
+  }
+
+  /* ----------------------- */
+  /* PÁGINA CONTATO */
+  .formularios::before {
+    width: 55%;
   }
 
   /* Fim Media 768px */
