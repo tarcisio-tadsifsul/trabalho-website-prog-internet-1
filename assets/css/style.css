@@ -4,18 +4,18 @@
   --fundo: #fafbf2;
   --fundo-claro: rgba(205, 144, 151, 0.1);
   --texto: #2f090e;
-  --primaria: #9b424d; /*#1c8742*/
+  --texto-titulo: #461117;
   --texto-primaria: #fcfdf5;
-  --suave: #ecf1e2;
   --texto-suave: #cd9097;
-  --destaque: #f3ba26;
   --texto-destaque: #1f0508;
+  --texto-cinza: #1f05088f;
+  --primaria: #9b424d; /*#1c8742*/
+  --suave: #ecf1e2;
+  --destaque: #f3ba26;
   --borda: #dae1d3;
   --borda-suave: #cd909770;
-  --input: #9b424d;
   --branco: #ffffff;
   --preto: #000000;
-  --texto-cinza: #1f05088f;
 
   /* Tipografia */
   --fonte-titulos: "Fraunces", serif;
@@ -58,7 +58,7 @@ h4 {
 .titulo-h1 {
   font-family: var(--fonte-titulos);
   font-size: clamp(2.4rem, 2rem + 4vw, 4.5rem);
-  color: var(--texto);
+  color: var(--texto-titulo);
   letter-spacing: 0.02rem;
 }
 
@@ -527,6 +527,7 @@ h4 {
 .receita-dia .infos {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 2rem;
   padding: 2rem;
 }
@@ -1073,6 +1074,7 @@ h4 {
 .header-sobre h1 {
   font-family: var(--font-texto);
   font-size: 1.2rem;
+  font-weight: 600;
   text-transform: uppercase;
   color: var(--primaria);
   margin-bottom: 1.2rem;
@@ -1160,6 +1162,7 @@ h4 {
 #pagina-contato .texto-decor {
   font-family: var(--font-texto);
   font-size: 1.2rem;
+  font-weight: 600;
   text-transform: uppercase;
   color: var(--primaria);
   text-align: center;
@@ -1382,21 +1385,24 @@ h4 {
     grid-template-columns: 1fr 1fr;
     gap: 3.6rem;
     padding-top: 1.6rem;
+  }
+  .hero .hero-item.imagem {
+    order: initial;
+  }
+  .hero .hero-item .img-hero {
+    border-radius: 1rem;
+    height: 420px;
+    object-fit: cover;
+    border: 1px solid var(--borda-suave);
+    padding: 0.2rem;
+  }
 
-    .hero-item.imagem {
-      order: initial;
-    }
-    .hero-item .img-hero {
-      border-radius: 1rem;
-      height: 420px;
-      object-fit: cover;
-      border: 1px solid var(--borda-suave);
-      padding: 0.2rem;
-    }
+  .hero .hero-item #form-pesquisa {
+    scroll-margin-top: 0;
+  }
 
-    .hero-item .cta-receita {
-      display: flex;
-    }
+  .hero .hero-item .cta-receita {
+    display: flex;
   }
 
   /* RECEITA DIA */
@@ -1491,6 +1497,11 @@ h4 {
 
   .hero-receita .img-receita {
     order: 0;
+  }
+
+  .hero-receita .img-receita img {
+    border: 1px solid var(--borda-suave);
+    padding: 0.2rem;
   }
 
   .midia {
