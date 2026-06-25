@@ -162,7 +162,7 @@
 
         <!-- Formularios -->
         <div class="formularios">
-          <input type="radio" name="btn-alternar" id="form-contato" checked />
+          <input type="radio" name="btn-alternar" class="btn-alternar" id="form-contato" checked />
           <label class="label" for="form-contato">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -182,7 +182,7 @@
             Contato
           </label>
 
-          <input type="radio" name="btn-alternar" id="form-receita" />
+          <input type="radio" name="btn-alternar" class="btn-alternar" id="form-receita" />
           <label class="label" for="form-receita">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -207,40 +207,71 @@
           </label>
 
           <div class="enviar" id="enviar-contato">
-            <form action="./pagina/enviado-sucesso.html" method="post">
+            <form action="" method="post">
               <div class="campo">
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" />
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required/>
               </div>
               <div class="campo">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email" placeholder="meu@email.com" required/>
               </div>
               <div class="campo">
                 <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem" rows="4"></textarea>
+                <textarea name="mensagem" id="mensagem" rows="4" placeholder="Deixe aqui sua mensagem ou dúvida..." required></textarea>
               </div>
               <input type="submit" value="Enviar Mensagem" />
             </form>
           </div>
 
           <div class="enviar" id="enviar-receita">
-            <form action="./pagina/enviado-sucesso.html" method="post">
+            <form action="" method="post">
               <div class="campo">
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" />
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required/>
               </div>
               <div class="campo">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email" placeholder="meu@email.com" required/>
               </div>
               <div class="campo">
                 <label for="titulo-receita">Título da Receita</label>
-                <input type="text" name="titulo-receita" id="titulo-receita" />
+                <input type="text" name="titulo-receita" id="titulo-receita" placeholder="Receita de ..." required/>
+              </div>
+              <div class="campo">
+                <label for="categoria-receita">Categoria</label>
+                <select name="categoria-receita" id="categoria-receita" required>
+                  <option value="">Selecione...</option>
+                  <option value="receitas-quentes">Receitas Quentes</option>
+                  <option value="receitas-rapidas">Receitas Rápidas</option>
+                  <option value="saladas">Saladas</option>
+                </select>
+              </div>
+              <div class="campo">
+                <p class="label-radios">Tempo de preparo</p>
+                <div class="wrap-inputs">
+                  <div class="radio">
+                    <input type="radio" name="tempo" value="15-min" id="15-min" required/>
+                    <label for="15-min">15 minutos</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="tempo" value="30-min" id="30-min" />
+                    <label for="30-min">30 minutos</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="tempo" value="1-hora" id="1-hora" />
+                    <label for="1-hora">1 hora</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="tempo" value="1h 30min" id="1h 30min" />
+                    <label for="1h 30min">1h 30min</label>
+                  </div>
+                </div>
               </div>
               <div class="campo">
                 <label for="ingredientes">Ingredientes (um por linha)</label>
                 <textarea
+                  required
                   name="ingredientes"
                   id="ingredientes"
                   rows="6"
@@ -250,6 +281,7 @@
               <div class="campo">
                 <label for="modo-preparar">Modo de Preparo</label>
                 <textarea
+                  required
                   name="modo-preparar"
                   id="modo-preparar"
                   rows="6"
