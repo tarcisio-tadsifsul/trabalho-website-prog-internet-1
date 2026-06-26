@@ -183,6 +183,8 @@ h4 {
   border-radius: 1rem 1rem 0 0;
   object-fit: cover;
   object-position: center;
+  height: 32rem;
+  width: 100%;
 }
 
 .grid-receitas .receita-item .infos {
@@ -550,6 +552,8 @@ h4 {
 
 .hero .hero-item .img-hero {
   border-radius: 1rem;
+  height: 36rem;
+    object-fit: cover;
 }
 
 /* fim hero */
@@ -617,6 +621,9 @@ h4 {
 
 .receita-dia .img-receita img {
   border-radius: 1rem 1rem 0 0;
+  height: 36rem;
+  object-fit: cover;
+  width: 100%;
 }
 
 /* DESTAQUE SEMANA */
